@@ -3,7 +3,7 @@ import heroBackground from "@/assets/hero-background.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
@@ -18,24 +18,24 @@ const Hero = () => {
       <div className="absolute bottom-32 right-16 w-16 h-16 bg-gradient-blue rounded-full opacity-25 animate-float" style={{ animationDelay: '2s' }} />
       <div className="absolute top-1/3 right-1/4 w-12 h-12 bg-gradient-mixed rounded-full opacity-15 animate-float" style={{ animationDelay: '4s' }} />
       
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
-          <div className="space-y-8 animate-fade-in-up">
-            <div className="space-y-4">
-              <div className="flex items-center gap-4 mb-6">
+          <div className="space-y-6 animate-fade-in-up">
+            <div className="space-y-6">
+              <div className="flex items-center gap-6 mb-4">
                 <img 
                   src="https://i.postimg.cc/1tqnX1Fb/Excellent-Kayode-Folorunsho-Professional-Portrait-1.jpg" 
                   alt="Excellent Kayode-Folorunsho - Product Manager & Builder"
-                  className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-4 border-coral/20 shadow-coral"
+                  className="w-24 h-24 md:w-28 md:h-28 rounded-full object-cover border-4 border-coral/20 shadow-coral flex-shrink-0"
                 />
                 <div>
-                  <h2 className="text-2xl md:text-3xl font-bold text-primary mb-1">Excellent Kayode-Folorunsho</h2>
+                  <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-2">Excellent Kayode-Folorunsho</h2>
                   <p className="text-subheading text-coral">Product Manager & Builder</p>
                 </div>
               </div>
               <h1 className="text-display text-primary">
-                Building problems that solve real problems
+                Building products that solve real problems
                 <span className="text-gradient-mixed"> founder's fire</span>
               </h1>
               <p className="text-body-large text-secondary max-w-2xl">
@@ -46,7 +46,7 @@ const Hero = () => {
             </div>
             
             {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 pt-2">
               <a 
                 href="#contact" 
                 className="btn-coral inline-flex items-center gap-2"
@@ -69,7 +69,7 @@ const Hero = () => {
             </div>
             
             {/* Quick Links */}
-            <div className="flex items-center gap-6 pt-4">
+            <div className="flex items-center gap-6 pt-2">
               <a 
                 href="https://linkedin.com/in/yourprofile" 
                 target="_blank"
