@@ -16,9 +16,9 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="max-w-4xl mx-auto">
           {/* Contact Info */}
-          <div className="space-y-8">
+          <div className="space-y-8 text-center">
             <div className="space-y-6">
               <h3 className="text-heading-3 text-primary">Let's Connect</h3>
               <p className="text-body text-secondary">
@@ -28,10 +28,10 @@ const Contact = () => {
             </div>
 
             {/* Contact Methods */}
-            <div className="space-y-4">
+            <div className="grid md:grid-cols-2 gap-4 max-w-2xl mx-auto">
               <a 
                 href="mailto:hello@example.com"
-                className="card-elegant flex items-center gap-4 p-6 hover:border-coral/30 hover:shadow-coral/20 transition-all duration-300 group"
+                className="card-elegant flex flex-col items-center gap-4 p-6 hover:border-coral/30 hover:shadow-coral/20 transition-all duration-300 group text-center"
               >
                 <div className="w-12 h-12 bg-gradient-coral rounded-xl flex items-center justify-center">
                   <Mail className="w-6 h-6 text-white" />
@@ -47,7 +47,7 @@ const Contact = () => {
               <a 
                 href="https://linkedin.com/in/yourprofile"
                 target="_blank"
-                className="card-elegant flex items-center gap-4 p-6 hover:border-electric-blue/30 hover:shadow-blue/20 transition-all duration-300 group"
+                className="card-elegant flex flex-col items-center gap-4 p-6 hover:border-electric-blue/30 hover:shadow-blue/20 transition-all duration-300 group text-center"
               >
                 <div className="w-12 h-12 bg-gradient-blue rounded-xl flex items-center justify-center">
                   <Linkedin className="w-6 h-6 text-white" />
@@ -63,7 +63,7 @@ const Contact = () => {
               <a 
                 href="https://calendly.com/yourprofile"
                 target="_blank"
-                className="card-elegant flex items-center gap-4 p-6 hover:border-coral/30 hover:shadow-coral/20 transition-all duration-300 group"
+                className="card-elegant flex flex-col items-center gap-4 p-6 hover:border-coral/30 hover:shadow-coral/20 transition-all duration-300 group text-center md:col-span-2"
               >
                 <div className="w-12 h-12 bg-gradient-mixed rounded-xl flex items-center justify-center">
                   <Calendar className="w-6 h-6 text-white" />
@@ -75,26 +75,10 @@ const Contact = () => {
                   <p className="text-secondary">Book a 30-minute chat</p>
                 </div>
               </a>
-
-              <a 
-                href="/cv.pdf"
-                target="_blank"
-                className="card-elegant flex items-center gap-4 p-6 hover:border-electric-blue/30 hover:shadow-blue/20 transition-all duration-300 group"
-              >
-                <div className="w-12 h-12 bg-gradient-blue rounded-xl flex items-center justify-center">
-                  <Download className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-primary group-hover:text-electric-blue transition-colors duration-300">
-                    Download CV
-                  </h4>
-                  <p className="text-secondary">Full professional background</p>
-                </div>
-              </a>
             </div>
 
             {/* Additional Info */}
-            <div className="space-y-4 pt-4">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-6 pt-4">
               <div className="flex items-center gap-3 text-secondary">
                 <MapPin className="w-5 h-5 text-coral" />
                 <span>Based in Nigeria, Available Globally</span>
@@ -104,83 +88,6 @@ const Contact = () => {
                 <span>Usually responds within 24 hours</span>
               </div>
             </div>
-          </div>
-
-          {/* Contact Form */}
-          <div className="card-featured p-8">
-            <form className="space-y-6">
-              <div className="space-y-4">
-                <h3 className="text-heading-3 text-primary">Send a Message</h3>
-                <p className="text-body text-secondary">
-                  Prefer to reach out directly? Drop me a message and I'll get back to you.
-                </p>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-sm font-medium text-primary mb-2">
-                    First Name
-                  </label>
-                  <input 
-                    type="text"
-                    className="w-full px-4 py-3 border border-border rounded-xl focus:ring-2 focus:ring-coral focus:border-transparent outline-none transition-all duration-300"
-                    placeholder="John"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-primary mb-2">
-                    Last Name
-                  </label>
-                  <input 
-                    type="text"
-                    className="w-full px-4 py-3 border border-border rounded-xl focus:ring-2 focus:ring-coral focus:border-transparent outline-none transition-all duration-300"
-                    placeholder="Doe"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-primary mb-2">
-                  Email Address
-                </label>
-                <input 
-                  type="email"
-                  className="w-full px-4 py-3 border border-border rounded-xl focus:ring-2 focus:ring-coral focus:border-transparent outline-none transition-all duration-300"
-                  placeholder="john@company.com"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-primary mb-2">
-                  Subject
-                </label>
-                <select className="w-full px-4 py-3 border border-border rounded-xl focus:ring-2 focus:ring-coral focus:border-transparent outline-none transition-all duration-300">
-                  <option>Product Management Opportunity</option>
-                  <option>Collaboration Inquiry</option>
-                  <option>Speaking Engagement</option>
-                  <option>General Question</option>
-                  <option>Other</option>
-                </select>
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-primary mb-2">
-                  Message
-                </label>
-                <textarea 
-                  rows={4}
-                  className="w-full px-4 py-3 border border-border rounded-xl focus:ring-2 focus:ring-coral focus:border-transparent outline-none transition-all duration-300 resize-none"
-                  placeholder="Tell me about your project, opportunity, or just say hello..."
-                />
-              </div>
-
-              <button 
-                type="submit"
-                className="w-full btn-coral flex items-center justify-center gap-2"
-              >
-                Send Message <Send className="w-4 h-4" />
-              </button>
-            </form>
           </div>
         </div>
       </div>
