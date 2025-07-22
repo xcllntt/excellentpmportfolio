@@ -84,6 +84,13 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				}
 			},
+			boxShadow: {
+				'subtle': 'var(--shadow-subtle)',
+				'medium': 'var(--shadow-medium)',
+				'bold': 'var(--shadow-bold)',
+				'coral': 'var(--shadow-coral)',
+				'blue': 'var(--shadow-blue)',
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
