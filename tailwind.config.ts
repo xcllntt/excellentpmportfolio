@@ -18,12 +18,33 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				inter: ['Inter', 'sans-serif'],
+				crimson: ['Crimson Text', 'serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				surface: 'hsl(var(--surface))',
+				
+				// Brand Colors
+				coral: {
+					DEFAULT: 'hsl(var(--coral))',
+					muted: 'hsl(var(--coral-muted))',
+				},
+				'electric-blue': {
+					DEFAULT: 'hsl(var(--electric-blue))',
+					muted: 'hsl(var(--electric-blue-muted))',
+				},
+				
+				// Typography Colors
+				'text-primary': 'hsl(var(--text-primary))',
+				'text-secondary': 'hsl(var(--text-secondary))',
+				'text-muted': 'hsl(var(--text-muted))',
+				
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
