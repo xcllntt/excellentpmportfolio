@@ -25,7 +25,7 @@ const Hero = () => {
             <div className="space-y-4">
               <p className="text-subheading text-coral">Product Manager & Builder</p>
               <h1 className="text-display text-primary">
-                Building products with 
+                Building problems that solve real problems
                 <span className="text-gradient-mixed"> founder's fire</span>
               </h1>
               <p className="text-body-large text-secondary max-w-2xl">
