@@ -195,11 +195,21 @@
 
   /* Cards */
   .card-elegant {
-    @apply bg-surface border border-border rounded-2xl p-6 md:p-8 shadow-subtle hover:shadow-medium transition-all duration-300;
+    @apply bg-surface border border-border rounded-2xl p-6 md:p-8 transition-all duration-300;
+    box-shadow: var(--shadow-subtle);
+  }
+  
+  .card-elegant:hover {
+    box-shadow: var(--shadow-medium);
   }
   
   .card-featured {
-    @apply bg-surface border border-border rounded-2xl p-6 md:p-8 shadow-medium hover:shadow-bold transition-all duration-300 hover:-translate-y-1;
+    @apply bg-surface border border-border rounded-2xl p-6 md:p-8 transition-all duration-300 hover:-translate-y-1;
+    box-shadow: var(--shadow-medium);
+  }
+  
+  .card-featured:hover {
+    box-shadow: var(--shadow-bold);
   }
 
   /* Animations */
