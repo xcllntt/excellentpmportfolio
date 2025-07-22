@@ -23,7 +23,17 @@ const Hero = () => {
           {/* Content */}
           <div className="space-y-8 animate-fade-in-up">
             <div className="space-y-4">
-              <p className="text-subheading text-coral">Product Manager & Builder</p>
+              <div className="flex items-center gap-4 mb-6">
+                <img 
+                  src="https://i.postimg.cc/1tqnX1Fb/Excellent-Kayode-Folorunsho-Professional-Portrait-1.jpg" 
+                  alt="Excellent Kayode-Folorunsho - Product Manager & Builder"
+                  className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-4 border-coral/20 shadow-coral"
+                />
+                <div>
+                  <h2 className="text-2xl md:text-3xl font-bold text-primary mb-1">Excellent Kayode-Folorunsho</h2>
+                  <p className="text-subheading text-coral">Product Manager & Builder</p>
+                </div>
+              </div>
               <h1 className="text-display text-primary">
                 Building problems that solve real problems
                 <span className="text-gradient-mixed"> founder's fire</span>

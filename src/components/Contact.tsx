@@ -40,7 +40,7 @@ const Contact = () => {
                   <h4 className="font-semibold text-primary group-hover:text-coral transition-colors duration-300">
                     Email
                   </h4>
-                  <p className="text-secondary">hello@example.com</p>
+                  <p className="text-secondary">excellent@example.com</p>
                 </div>
               </a>
 

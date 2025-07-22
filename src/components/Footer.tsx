@@ -11,9 +11,17 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-2 space-y-6">
             <div>
-              <h3 className="font-black text-2xl mb-4">
-                PM<span className="text-coral">×</span>Builder
-              </h3>
+              <div className="flex items-center gap-3 mb-4">
+                <img 
+                  src="https://i.postimg.cc/1tqnX1Fb/Excellent-Kayode-Folorunsho-Professional-Portrait-1.jpg" 
+                  alt="Excellent Kayode-Folorunsho - Product Manager & Builder"
+                  className="w-12 h-12 rounded-full object-cover border-2 border-coral/20"
+                />
+                <div>
+                  <h3 className="font-bold text-xl text-primary-foreground">Excellent Kayode-Folorunsho</h3>
+                  <p className="text-sm text-primary-foreground/80">Product Manager & Builder</p>
+                </div>
+              </div>
               <p className="text-primary-foreground/80 max-w-md">
                 Product Manager with a founder's fire and a builder's mindset. 
                 Turning ideas into products, and products into results.

@@ -29,8 +29,16 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#" className="font-black text-xl text-primary hover:text-coral transition-colors duration-300">
-            PM<span className="text-gradient-mixed">×</span>Builder
+          <a href="#" className="flex items-center gap-3 hover:opacity-80 transition-opacity duration-300">
+            <img 
+              src="https://i.postimg.cc/1tqnX1Fb/Excellent-Kayode-Folorunsho-Professional-Portrait-1.jpg" 
+              alt="Excellent Kayode-Folorunsho - Product Manager & Builder"
+              className="w-10 h-10 rounded-full object-cover border-2 border-coral/20"
+            />
+            <div className="hidden sm:block">
+              <div className="font-bold text-lg text-primary">Excellent Kayode-Folorunsho</div>
+              <div className="text-xs text-secondary -mt-1">Product Manager & Builder</div>
+            </div>
           </a>
 
           {/* Desktop Navigation */}
