@@ -36,7 +36,7 @@ const Hero = () => {
               </div>
               <h1 className="text-display text-primary">
                 Building products that solve real problems
-                <span className="text-gradient-mixed"> founder's fire</span>
+                <span className="text-gradient-mixed"> real problems</span>
               </h1>
               <p className="text-body-large text-secondary max-w-2xl">
                 Product Manager with a founder's fire and a builder's mindset— Founder of TFS (The Family of Students), 
